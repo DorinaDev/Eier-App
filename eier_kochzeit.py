@@ -18,7 +18,7 @@ class EierKochRechner:
     else:
       return None
 
-# Funktion für den Button
+# Button
 def berechne_zeit():
     gewicht = entry_größe.get().strip().upper()  # Eingabe normalisieren
     haertegrad = haertegrad_var.get()
@@ -45,7 +45,7 @@ def berechne_zeit():
     else:
         messagebox.showerror("Fehler", "Ungültige Eingabe.")
 
-# GUI erstellen
+# GUI
 root = tk.Tk()
 root.title("Eier-Koch App")
 root.geometry("400x300")
@@ -62,7 +62,7 @@ tk.Label(root, text="Härtegrad wählen:", bg="#f5f5dc", font=("Garamond", 12)).
 haertegrad_menu = tk.OptionMenu(root, haertegrad_var, "1", "2", "3", "4", "5")
 haertegrad_menu.pack(pady=5)
 
-# Button zum Berechnen
+# Button (Berechnung)
 tk.Button(root, text="Berechnen", command=berechne_zeit, font=("Garamond", 12), bg="#ffcc00").pack(pady=10)
 
 # Ergebnis-Anzeige

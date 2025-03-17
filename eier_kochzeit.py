@@ -20,7 +20,7 @@ class EierKochRechner:
 
 # Button
 def berechne_zeit():
-    gewicht = entry_größe.get().strip().upper()  # Eingabe normalisieren
+    gewicht = entry_größe.get().strip().upper()
     haertegrad = haertegrad_var.get()
 
     # Validierung

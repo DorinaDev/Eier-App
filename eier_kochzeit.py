@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# Klasse für die Berechnung
+# Berechnung
 class EierKochRechner:
   def __init__(self, gewichtsklasse):
     self.gewichtsklasse = gewichtsklasse

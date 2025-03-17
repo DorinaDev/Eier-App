@@ -41,7 +41,7 @@ def berechne_zeit():
     kochzeit = eirechner.berechne_kochzeit(haertegrad)
 
     if kochzeit is not None:
-        ergebnis_label.config(text=f"Kochzeit: {round(kochzeit)} Min.")
+        ergebnis_label.config(text=f"Kochzeit: {round(kochzeit, 1)} Min.")
     else:
         messagebox.showerror("Fehler", "Ungültige Eingabe.")
 
